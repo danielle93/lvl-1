@@ -682,13 +682,13 @@ input::selection {
   display: inline-block;
   min-height: 1em;
   outline: none;
-  border: none;
+  border: 2px rgba(52, 3, 3, 0.58) solid;
   vertical-align: baseline;
-  background: #E0E1E2 none;
-  color: rgba(0, 0, 0, 0.6);
+  background: rgba(69, 0, 0, 0.75);
+  color: rgb(255, 252, 240);
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  margin: 0em 0.25em 0em 0em;
-  padding: 0.78571429em 1.5em 0.78571429em;
+  margin: 0em 1em 0em 0em;
+  padding: 1em;
   text-transform: none;
   text-shadow: none;
   font-weight: bold;
@@ -696,7 +696,7 @@ input::selection {
   font-style: normal;
   text-align: center;
   text-decoration: none;
-  border-radius: 0.28571429rem;
+  border-radius: .25em;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -717,10 +717,10 @@ input::selection {
 ---------------*/
 
 .ui.button:hover {
-  background-color: #CACBCD;
+  background-color: rgba(36, 0, 0, 0.87);
   background-image: none;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgb(255, 252, 240);
 }
 
 .ui.button:hover .icon {
@@ -732,8 +732,8 @@ input::selection {
 ---------------*/
 
 .ui.button:focus {
-  background-color: #CACBCD;
-  color: rgba(0, 0, 0, 0.8);
+  background-color: none;
+  color: rgb(255, 252, 240);
   background-image: '' !important;
   box-shadow: '' !important;
 }
@@ -748,9 +748,9 @@ input::selection {
 
 .ui.button:active,
 .ui.active.button:active {
-  background-color: #BABBBC;
+  background-color: none;
   background-image: '';
-  color: rgba(0, 0, 0, 0.9);
+  color: rgb(255, 252, 240);
   box-shadow: 0px 0px 0px 1px transparent inset, none;
 }
 
@@ -1115,7 +1115,7 @@ input::selection {
   align-items: center;
   margin: 0px 0px 0px -1px !important;
   padding: '';
-  font-size: 1em;
+  font-size: 2em;
   border-color: rgba(34, 36, 38, 0.15);
 }
 
@@ -1395,7 +1395,7 @@ input::selection {
 .ui.mini.buttons .button,
 .ui.mini.buttons .or,
 .ui.mini.button {
-  font-size: 0.78571429rem;
+  font-size: 2em;
 }
 
 .ui.tiny.buttons .button,
@@ -1413,7 +1413,7 @@ input::selection {
 .ui.buttons .button,
 .ui.buttons .or,
 .ui.button {
-  font-size: 1rem;
+  font-size: 1.5em;
 }
 
 .ui.large.buttons .button,

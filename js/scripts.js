@@ -1,5 +1,4 @@
 //Scripts
-console.log('Hello World!');
 
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
@@ -11,9 +10,12 @@ function removeTransition(e) {
     const key = document.querySelector(`button[data-key="${e.keyCode}"]`);
     if (!audio) return;
 
-    key.classList.add('playing');
     audio.currentTime = 0;
     audio.play();
+    key.classList.add('playing');
+    setTimeout(function(){ 
+        key.classList.remove('playing'); }, 100   
+      );
   }
 
   const keys = Array.from(document.querySelectorAll('.key'));
