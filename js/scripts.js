@@ -2,7 +2,7 @@
 
 function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
-    e.target.classList.remove('playing');
+    e.target.classList.remove('playing'); // Can't get remove transform to work with this function?
   }
 
   function playSound(e) {
@@ -13,7 +13,7 @@ function removeTransition(e) {
     audio.currentTime = 0;
     audio.play();
     key.classList.add('playing');
-    setTimeout(function(){ 
+    setTimeout(function(){ // I know this isn't recommended but it's the only way I was able to get it to remove the class 
         key.classList.remove('playing'); }, 100   
       );
   }
