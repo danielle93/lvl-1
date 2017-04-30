@@ -687,6 +687,7 @@ input::selection {
   background: rgba(69, 0, 0, 0.75);
   color: rgb(255, 252, 240);
   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin-bottom: 1em;
   margin: 0em 1em 0em 0em;
   padding: 1em;
   text-transform: none;
